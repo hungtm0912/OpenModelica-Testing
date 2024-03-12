@@ -1,0 +1,15 @@
+{
+    "optim_vars": [
+    "driver_PID_kp",
+    "driver_PID_ki",
+    "delay_speed",
+    "delay_power"
+    ],
+    "experiment": [2277, 2855, 0.1, 1e-4],
+    "lower_bounds": [5, 1, 0.1001, 0.1001],
+    "upper_bounds": [1000, 200, 3, 3],
+    "cost_var": "metrics_calculator.metrics.rmse_power",
+    "supergain": [0.2, 0, 0.8, 0],
+    "delta_vars": ["delta_speed", "delta_power"],
+    "deltas": [0.25, 0]
+    }

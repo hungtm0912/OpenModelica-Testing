@@ -1,0 +1,22 @@
+{
+    "override_vars": {
+        "SoH": 94.5,
+        "init_SoC": 87,
+        "driver_PID_kp": 400,
+        "driver_PID_ki": 5,
+        "delay_speed": 1.8,
+        "delay_power": 0.56
+        },
+    "experiment": [0, 3142.6, 0.1, 1e-6],
+    "output_vars": [
+        "metrics_calculator.metrics.specific_consumption",
+        "metrics_calculator.metrics.consumption",
+        "metrics_calculator.metrics.pos_energy",
+        "metrics_calculator.metrics.regen_energy",
+        "metrics_calculator.metrics.error_cycle",
+        "metrics_calculator.metrics.rmse_cycle"
+        ],
+    "supergain": [1, 0, 0, 0],
+    "delta_vars": ["delta_speed", "delta_power"],
+    "deltas": [0.55555, 0]
+    }
